@@ -1,0 +1,151 @@
+/* Background */
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+/* Main Box */
+.mainbody{
+    height: 34.5rem;
+    width : 25rem;
+    border: 0.125rem solid black;
+    border-radius: 2.5rem;
+    background-color: #457B9D;
+    filter: drop-shadow(0.3125rem 0.3125rem 1.25rem cyan)
+}
+/*screen*/
+.output{
+    font-family: Arial, Helvetica, sans-serif;
+    height : 4rem;
+    width: 23.6rem;
+    margin-top:0;
+    background-color: #1D3557; 
+    position: relative;
+    top: 1rem;
+    left : 0.7rem;
+    font-size: 1.5rem;
+    text-align: end;
+    border-radius: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    filter:drop-shadow(0.3125rem 0.3125rem 0.625rem rgb(18, 18, 49));
+}
+.out{
+    margin-right: 1rem;
+}
+/* Key */
+.key{
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.button{
+    height : 3rem;
+    width: 3rem;
+    margin: 0.7rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(41, 40, 40);
+    border: 0.5rem solid transparent;
+    border-radius: 50%;
+    background-color: #A8DADC;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    filter: drop-shadow(0.1875rem 0.1875rem 0.3125rem black)
+}
+.button:active{
+    filter: drop-shadow(0 0 0 black);
+    height : 2.9rem;
+    width: 2.9rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+}
+.button:hover{
+    color: #087c80;
+    border: 0.5rem solid #73c2c5;
+    background-color: white;
+}
+#equal{
+    background-color: #E63946;
+    height : 3rem;
+    width: 3rem;
+    margin: 0.7rem;
+    font-size: large;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+}
+#equal:hover{
+    background-color: white;
+    color: #960612;
+    border: 0.5rem solid #E63946;
+}
+
+/* Ralf */
+.rMain{
+    position: absolute;
+    height: auto;
+    width: auto;
+    right: 6.25rem;   
+    top: 6.25rem;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 1.25rem;
+    background-color: #457B9D;
+    font-family: Arial, Helvetica, sans-serif;
+}   
+.rMain .operator{
+    margin-right: 1.7rem;
+    font-size: larger;
+}
+#ralf{
+    display: flex;
+    justify-content: center;
+}
+/*Responsive*/
+@media(max-width : 800px){
+    .rMain{
+        position: relative;
+        bottom: 1.5rem;
+    }
+}
+@media(max-width: 400px){
+    .mainbody{
+        width: 20rem;
+    }
+    .button{
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+    .output{
+        width: 18.7rem;
+    }
+    #equal{
+        height: 2.4rem;
+        width: 2.4rem;
+    }
+    .button:active{
+        font-size: 1.2rem;
+        filter: drop-shadow(0 0 0 black);
+        height : 2.27rem;
+        width : 2.27rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+    #equal:active{
+        font-size: 1.2rem;
+        filter: drop-shadow(0 0 0 black);
+        height : 2.27rem;
+        width : 2.27rem;
+        margin-left: 0.8rem;
+        margin-right: 0.8rem;
+    }
+}
